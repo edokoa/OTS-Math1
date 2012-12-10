@@ -34,7 +34,7 @@ void draw(){
     float vert1Y = outerRadius*sin(radians((360/sides)*i)+radians(rotation));
     float vert2X = innerRadius*cos(radians((360/(sides*2))*(i*2+1))+radians(rotation));  //The next inner vertex
     float vert2Y = innerRadius*sin(radians((360/(sides*2))*(i*2+1))+radians(rotation));  //Observe how we divide the reference circle in the double of segments
-    float vert3X = outerRadius*cos(radians((360/sides)*(i+1))+radians(rotation));  //The next inner vertex
+    float vert3X = outerRadius*cos(radians((360/sides)*(i+1))+radians(rotation));  //The next outer vertex
     float vert3Y = outerRadius*sin(radians((360/sides)*(i+1))+radians(rotation));  //using basic trigonometric operations
     
     line(vert1X, vert1Y,vert2X,vert2Y);                     //So we can draw a line between the current vertex and the next inner point
