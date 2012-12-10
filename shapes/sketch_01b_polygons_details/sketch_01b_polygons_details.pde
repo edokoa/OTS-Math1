@@ -21,10 +21,6 @@ void draw(){
   noFill();
   ellipse(0,0,radius*2,radius*2);        //This is the circle in which the polygon is inscribed
   
-  for(int i=0;i<sides; i++){            //We draw the lines from the center (spokes)
-    //line(radius*cos(radians((360/sides)*i)), radius*sin(radians((360/sides)*i)),0,0);
-  }
-  
   stroke(255,255,255);  // We set the color to white
     
   // We draw the polygon
@@ -44,9 +40,9 @@ void draw(){
     float vertX=radius*cos(radians((360/sides)*i));
     float vertY=radius*sin(radians((360/sides)*i));
     
-    line(0,0,vertX,vertY); // Spokes
+    line(0,0,vertX,vertY);              // Spokes
     
-     fill(255,255,255);                    //We set the properties of the points
+    fill(255,255,255);                    //We set the properties of the points
     stroke(0,0,0);
   
     ellipse(vertX, vertY,10,10); //vertex points
