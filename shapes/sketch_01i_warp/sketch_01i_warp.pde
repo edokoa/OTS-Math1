@@ -33,8 +33,8 @@ void draw(){
   shipX = shipX + shipSpeedX;
   shipY = shipY + shipSpeedY;
   
-  shipSpeedX = shipSpeedX*0.98;      //friction
-  shipSpeedY = shipSpeedY*0.98;
+  shipSpeedX = shipSpeedX*0.9;      //friction
+  shipSpeedY = shipSpeedY*0.9;
   
   if(shipX> 450) { shipX = -450; }    //if the ship is out of the screen, we place it in the other side.
   if(shipX<-450) { shipX = 450; }     //keep in mind that we translated the coordinate system so 0,0 is the center of the screen.
