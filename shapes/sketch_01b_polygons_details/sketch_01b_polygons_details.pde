@@ -13,7 +13,7 @@ void draw(){
   translate(400,400);    //we put the coords center in (400,400) so it's in the center of the canvas
   //rotate(radians(-90)); //this line rotates the viewport 90º counterclockwise to make the 0º face upwards.
   
-  stroke(100,100,100);   // We set the color to grey and we draw both axis
+  stroke(150);   // We set the color to grey and we draw both axis
   line(-350,0,350,0);  
   line(0,-350,0,350);
   
@@ -46,9 +46,6 @@ void draw(){
     stroke(0,0,0);
   
     ellipse(vertX, vertY,10,10); //vertex points
-    
-    //We can also show the coordinates for every vertex
-    text("("+vertX+","+vertY+")",(radius+30)*cos(radians((360/sides)*i)), (radius+30)*sin(radians((360/sides)*i)));
   }
   
   

@@ -1,7 +1,7 @@
 float ballX = 300;
 float ballY = 400;
 
-float speedX = 10;
+float speedX = 0;
 float speedY = 0;
 
 void setup() {

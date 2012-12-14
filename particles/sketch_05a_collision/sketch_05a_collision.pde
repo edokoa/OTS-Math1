@@ -41,7 +41,8 @@ void draw(){
   stroke(100,100,255);
   line(ballX,ballY,ball2X,ball2Y);
   
-  distance=sqrt(pow(ballX-ball2X,2)+pow(ballY-ball2Y,2));
+  distance=sqrt(pow(ballX-ball2X,2)+pow(ballY-ball2Y,2));    //Pythagorean Theorem
+  
   
   fill(255,255,255);
   text(distance,50,50);

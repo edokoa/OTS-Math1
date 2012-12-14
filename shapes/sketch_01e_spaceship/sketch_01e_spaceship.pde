@@ -1,6 +1,3 @@
-int sides= 5;
-int outerRadius = 200;
-int innerRadius = 100;
 int rotation=0;
 
 void setup() {
@@ -19,12 +16,13 @@ void draw(){
   
   stroke(100,100,100);   // We set the color to grey and we draw both axis
   
-  line(-250,0,250,0);  
+  line(-250,0,250,0);  //Those two lines draw both axis
   line(0,-250,0,250);
   
   noFill();                                      //We make the fill of the objects invisible
-  ellipse(0,0,innerRadius*2, innerRadius*2);     //so we can draw the reference circles (inner & outer)
-  ellipse(0,0,outerRadius*2, outerRadius*2);
+  ellipse(0,0,40,40);     //so we can draw the reference circles (inner & outer)
+  ellipse(0,0,120,120);
+  ellipse(0,0,160,160);
    
   stroke(255,255,255);  // We set the color to white
   
