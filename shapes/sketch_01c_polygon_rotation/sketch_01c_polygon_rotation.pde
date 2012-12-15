@@ -11,7 +11,7 @@ void setup() {
 void draw(){
   background(0); // We clear the screen in every frame by coloring it black 
   
-  //rotation = rotation +2; //We increment rotation by 2º in every frame
+  rotation = rotation +2; //We increment rotation by 2º in every frame
   
   translate(400,400);    //we put the coords center in (400,400) so it's in the center of the canvas
   //rotate(radians(-90)); //this line rotates the viewport 90º counterclockwise to make the 0º face upwards.
